@@ -1,0 +1,123 @@
+.arrow{
+    font-size: 35px;
+    color: black;
+}
+
+.arrow-btn{
+    position: absolute;
+    width: 4%;
+    ::before{
+        height: 60px;
+        width: 60px;
+        background-color: rgb(255, 255, 255, 0.5);
+        border-radius: 100px;
+        position: relative;
+        right: 0px;
+        margin-left: 10px;
+        padding-top: 10px;
+    }
+}
+
+.arrow-btn2{
+    @extend .arrow-btn;
+    right: -5px;
+    margin-right: 23px;
+
+}
+
+.hero-span{
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: $brand-primary;
+    letter-spacing: 1px;
+}
+
+.main-text{
+    color: $brand-primary;
+    font-size: 60px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.carousel-caption {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 100%;
+  padding: 0 1rem;
+}
+
+.supporting-text{
+ font-family: 'Times New Roman', Times, serif;
+ color: $brand-primary;
+ font-size: 60px;
+ font-weight: 200;
+ line-height: 1rem;
+ letter-spacing: -3px;
+ text-transform: uppercase;
+}
+
+.btn-div{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+}
+
+.btn-hero{
+    font-size: 14px;
+    font-weight: 600;
+    height: 50px;
+    width: 220px;
+}
+
+.carousel-item {
+  height: 550px;
+}
+
+.carousel-item img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+
+@media (max-width: 576px) {
+.main-text{
+    font-size: 40px;
+}
+
+.supporting-text{
+    font-size: 40px;
+    letter-spacing: 2px;
+}
+
+  .btn-div{
+    flex-direction: column;
+  }
+
+ .one{
+    object-position: 20%;
+    transform: rotate(9deg) scale(1.2);
+  }
+
+  .two{
+    object-position: 83%;
+    // transform: scale(1.2);
+  }
+
+.arrow-btn{
+    position: absolute;
+    width: 16%;
+    ::before{
+        position: relative;
+        right: 0px;
+        top: 230px;
+        margin-left: 15px;
+    }
+}
+
+}

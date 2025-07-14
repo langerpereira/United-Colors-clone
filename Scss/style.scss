@@ -1,0 +1,31 @@
+@import './helper/variable';
+@import './component/nav';
+@import './component/hero';
+@import './component/banner';
+@import './component/collection';
+@import './component/color-palette';
+@import './component/photo-cards';
+@import './component/footer';
+@import './base/mixin';
+
+
+*{
+    margin: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html{
+      width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+
+}
+
+.spacer{
+    height: 50px;
+}
+
+

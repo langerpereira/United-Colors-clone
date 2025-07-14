@@ -1,0 +1,162 @@
+.navbar-custom {
+  background-color: $brand-primary !important;
+  height: 72px;
+  padding: 0px 40px;
+  z-index: 9999;
+}
+
+.nav-i{
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+.navbar-toggler:focus{
+  box-shadow: none !important;
+}
+
+
+.slideIn-bar{
+  padding: 50px;
+  display: none;
+  background-color: aquamarine;
+}
+
+.btn-search{
+  all: unset;
+  text-decoration: none;
+}
+
+.custom-search-offcanvas {
+  position: absolute;
+  top: 70px; 
+  left: 0;
+  width: 99%;
+  z-index: 8888;
+}
+
+.hover-wrapper {
+  position: relative;
+}
+
+.hover-box {
+  position: absolute;
+  background-color: $brand-primary;
+  height: 100vh;
+  width: 100vw;
+  top: 0%;
+  bottom: 0%;
+  transform: translate(-43%, 3.8%);
+  padding: 20px;
+  display: none;
+  z-index: 99;
+}
+
+.hover-wrapper:hover .hover-box,
+.hover-box:hover{
+  display: block;
+}
+
+.row{
+  padding-top: 50px;
+}
+
+.col1{
+  img{
+    height: 150px;
+    width: 150px;
+    margin-bottom: 0;
+    object-fit: cover;
+  }
+  .home-men{
+    margin: 0;
+    padding: 10px;
+    width: 150px;
+    height: auto;
+    color: $brand-primary;
+    background-color: $card-green;
+    font-weight: 700;
+    font-size: 22px;
+  }
+  span{
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 400;
+  }
+
+}
+
+.col2{
+  padding-right: 50px;
+  font-size: 12px;
+  line-height: 30px;
+  h6{
+    font-size: 16px;
+    font-weight: 900;
+    margin-bottom: 25px;
+  }
+}
+
+.col3{
+  @extend .col2;
+}
+
+.col4{
+  @extend .col2;
+  border-image: linear-gradient(to bottom, green, blue,red, orange, yellow) 1;
+}
+
+.ofcanvas-container{
+ width: 100%;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+
+.form-ofcanvas{
+ width: 25%;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ gap: 10px;
+}
+
+.ofcanvas-search{
+  border-width: 2px;
+  border-color: $brand-primary;
+}
+
+@media (max-width: 576px) {
+  .navbar-custom{
+    padding: 10px;
+  }
+  .brand-img{
+    height: 33px;
+  }
+
+  .form-ofcanvas{
+ width: 100%;
+}
+
+  .navbar-brand{
+    margin-left: 10px;
+
+  }
+
+  .sidebar-body{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-left: 25px;
+  }
+
+  .sidebar-menu{
+    font-weight: 500;
+    font-size: 18px;
+  }
+  .sidebar-menu-info{
+    font-size: 16px;
+    font-weight: 500;
+  }
+
+}
+
