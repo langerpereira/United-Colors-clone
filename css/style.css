@@ -253,7 +253,8 @@
 }
 
 .carousel-item {
-  height: 550px;
+  height: 100vh;
+  margin-top: 1rem;
 }
 
 .carousel-item img {
